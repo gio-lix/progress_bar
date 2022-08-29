@@ -1,0 +1,55 @@
+.circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: calc(100% / 3);
+    left: -40px;
+    width: 50px;
+    height: 2px;
+    background-color: greenyellow;
+
+    color: red!important;
+    //.circle_label {
+    //  background-color: red!important;
+    //}
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: white;
+    background-color: greenyellow;
+  }
+
+  .active {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid greenyellow;
+    background-color: white;
+    color: greenyellow;
+  }
+
+  &_label {
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+}

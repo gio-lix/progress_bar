@@ -1,0 +1,13 @@
+.step {
+  &_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &_section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
